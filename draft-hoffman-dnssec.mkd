@@ -40,7 +40,10 @@ specified RFCs 4033, 4034, 4035, and a handful of others. The purpose is to intr
 all of the RFCs in one place so that the reader can understand the many aspects of DNSSEC.
 This document does not update any of those RFCs.
 
-GITHUB INFO
+This document is currently maintained at https://github.com/paulehoffman/draft-hoffman-dnssec.
+Issues and pull requests are welcomed.
+If the document is later adopted by a working group, a new repository will likely
+be created.
 
 --- middle
 
