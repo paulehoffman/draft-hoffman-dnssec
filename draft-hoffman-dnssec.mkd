@@ -72,12 +72,12 @@ later in this document.)
 
 The three initial core documents generally cover different topics:
 
-- RFC 4033 is an overview of DNSSEC, including how it might change the resolution of DNS queries.
+- {{RFC4033}} is an overview of DNSSEC, including how it might change the resolution of DNS queries.
 
-- RFC 4034 specifies the DNS resource records used in DNSSEC.
+- {{RFC4034}} specifies the DNS resource records used in DNSSEC.
 It obsoletes many RFCs for earlier versions of DNSSEC.
 
-- RFC 4035 covers the modifications to the DNS protocol incurred by DNSSEC.
+- {{RFC4035}} covers the modifications to the DNS protocol incurred by DNSSEC.
 These include signing zones, serving signed zones, resolving in light of
 DNSSEC, and authenticating DNSSEC-signed data.
 
@@ -94,7 +94,13 @@ DSA was thinly implemented and can safely be ignored by DNSSEC implementations
 documents for the details).
 RSA is still the most popular signing algorithm for DNSSEC.
 
-
+As with any major protocol, developers and operators discovered issues with the original
+core documents over the years.
+{{RFC6840}} is an omnibus update to the original core documents and thus itself has
+become a core document.
+In addition to covering new requirements from new DNSSEC RFCs, it describes many important
+security and interoperability issues that arose during the deployment of the initial
+specifications, particularly after the DNS root was signed in 2010.
 
 
 # DNSSEC as a Best Current Practice
