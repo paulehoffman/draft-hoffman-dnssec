@@ -26,12 +26,14 @@ author:
    email: paul.hoffman@icann.org
 
 normative:
+  RFC3110:
   RFC4033:
   RFC4034:
   RFC4035:
   RFC6840:
 
 informative:
+  RFC2536:
 
 --- abstract
 
@@ -54,6 +56,47 @@ The core specification for what we know as DNSSEC (the combination of {{RFC4033}
 authentication to data in the DNS. {{RFC6840}} updates and extends those core RFCs,
 but does not fundamentally change the way that DNSSEC works.
 
+This document lists many (but not all) of the RFCs that should be considered by someone
+creating an implementation of, or someone deploying, modern DNSSEC. It also points
+to the relevant IANA registries that relate to DNSSEC.
+
+
+# DNSSEC Core Documents
+
+What we today call "DNSSEC" is formally version 3 of the DNSSEC specification.
+However, earlier versions of DNSSEC were thinly deployed and significantly less
+visible than the current DNSSEC specification. Throughout this document, "DNSSEC"
+means the version of the protocol initially defined in RFCs 4033, 4034, and 4035.
+(Some of those document normatively reference some earlier RFCs, as described
+later in this document.)
+
+The three initial core documents generally cover different topics:
+
+- RFC 4033 is an overview of DNSSEC, including how it might change the resolution of DNS queries.
+
+- RFC 4034 specifies the DNS resource records used in DNSSEC.
+It obsoletes many RFCs for earlier versions of DNSSEC.
+
+- RFC 4035 covers the modifications to the DNS protocol incurred by DNSSEC.
+These include signing zones, serving signed zones, resolving in light of
+DNSSEC, and authenticating DNSSEC-signed data.
+
+At the time this set of core documents was published, someone could create a DNSSEC
+implementation of signing software, of an DNSSEC-aware authoritative server, and/or
+a DNSSEC-aware recursive resolver from the three core documents plus a few older
+RFCs specifying the cryptography used. Those two older documents are:
+
+- {{RFC2536}} defines how to use the DSA signature algorithm (although refers to other
+documents for the details).
+DSA was thinly implemented and can safely be ignored by DNSSEC implementations
+
+- {{RFC3110}} defines how to use the RSA signature algorithm (although refers to other
+documents for the details).
+RSA is still the most popular signing algorithm for DNSSEC.
+
+
+
+
 # DNSSEC as a Best Current Practice
 
 The DNSSEC set of protocols is widely considered the best current practice for adding
@@ -67,9 +110,11 @@ are validated. However, this low level of implementation does not affect whether
 is a best current practice; it just indicates that the value of deploying DNSSEC is often
 considered lower than the cost.
 
+
 # IANA Considerations
 
 This document does not create any new IANA considerations.
+
 
 # Security Considerations
 
