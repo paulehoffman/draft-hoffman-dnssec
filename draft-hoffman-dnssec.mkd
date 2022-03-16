@@ -1,5 +1,5 @@
 ---
-title: DNS Security Extentions (DNSSEC)
+title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
 docname: draft-hoffman-dnssec-00
 
@@ -54,12 +54,26 @@ The core specification for what we know as DNSSEC (the combination of {{RFC4033}
 authentication to data in the DNS. {{RFC6840}} updates and extends those core RFCs,
 but does not fundamentally change the way that DNSSEC works.
 
+# DNSSEC as a Best Current Practice
+
+The DNSSEC set of protocols is widely considered the best current practice for adding
+origin authentication of data in the DNS. To date, no standards-track RFCs offer any other
+method for such origin authentication of data in the DNS.
+
+Some observers note that, more than 15 years after the DNSSEC specification was published,
+it is still not widely deployed. Recent estimates are that fewer than 10% of the domain names
+used for web sites are signed, and only around a third of queries to recursive resolvers
+are validated. However, this low level of implementation does not affect whether DNSSEC
+is a best current practice; it just indicates that the value of deploying DNSSEC is often
+considered lower than the cost.
+
 # IANA Considerations
 
 This document does not create any new IANA considerations.
 
 # Security Considerations
 
-This document does not create any new security considerations.
+All of the security considerations from all of the RFCs referenced in this document
+apply here.
 
 --- back
