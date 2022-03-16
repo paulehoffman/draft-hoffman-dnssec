@@ -1,0 +1,62 @@
+---
+title: DNS Security Extentions (DNSSEC)
+abbrev: DNSSEC
+docname: draft-hoffman-dnssec-00
+
+stand_alone: true
+v: 3
+
+ipr: trust200902
+kw: Internet-Draft
+cat: bcp
+consensus: true
+submissionType: IETF
+
+pi:
+  toc: yes
+  tocdepth: 4
+  sortrefs: yes
+  symrefs: yes
+
+author:
+ -
+   ins: P. Hoffman
+   name: Paul Hoffman
+   org: ICANN
+   email: paul.hoffman@icann.org
+
+normative:
+  RFC4033:
+  RFC4034:
+  RFC4035:
+  RFC6840:
+
+informative:
+
+--- abstract
+
+This document describes the DNS security extensions (commonly called "DNSSEC") that are
+specified RFCs 4033, 4034, 4035, and a handful of others. The purpose is to introduce
+all of the RFCs in one place so that the reader can understand the many aspects of DNSSEC.
+This document does not update any of those RFCs.
+
+GITHUB INFO
+
+--- middle
+
+# Introduction
+
+The core specification for what we know as DNSSEC (the combination of {{RFC4033}},
+{{RFC4034}}, and {{RFC4035}}) describes a set of protocols that provides origin
+authentication to data in the DNS. {{RFC6840}} updates and extends those core RFCs,
+but does not fundamentally change the way that DNSSEC works.
+
+# IANA Considerations
+
+This document does not create any new IANA considerations.
+
+# Security Considerations
+
+This document does not create any new security considerations.
+
+--- back

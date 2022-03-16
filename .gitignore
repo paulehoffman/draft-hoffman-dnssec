@@ -1,0 +1,8 @@
+*.txt
+*.xml
+*.html
+Local/
+dist/
+pdf/
+.tmp/
+Pipfile*
