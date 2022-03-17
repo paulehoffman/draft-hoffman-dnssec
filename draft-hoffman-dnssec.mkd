@@ -37,11 +37,17 @@ normative:
 
 informative:
   RFC2536:
+  RFC5011:
   RFC5933:
   RFC6014:
   RFC6605:
+  RFC6781:
+  RFC7344:
+  RFC8078:
   RFC8080:
+  RFC8198:
   RFC8624:
+  RFC9077:
   RFC9157:
 
 --- abstract
@@ -70,6 +76,19 @@ creating an implementation of, or someone deploying, modern DNSSEC.
 It uses terminology from those documents without defining that terminology.
 It also points to the relevant IANA registries that relate to DNSSEC.
 It does not, however, point to standards that rely on zones needing to be signed by DNSSEC.
+
+## DNSSEC as a Best Current Practice
+
+The DNSSEC set of protocols is widely considered the best current practice for adding
+origin authentication of data in the DNS. To date, no standards-track RFCs offer any other
+method for such origin authentication of data in the DNS.
+
+Some observers note that, more than 15 years after the DNSSEC specification was published,
+it is still not widely deployed. Recent estimates are that fewer than 10% of the domain names
+used for web sites are signed, and only around a third of queries to recursive resolvers
+are validated. However, this low level of implementation does not affect whether DNSSEC
+is a best current practice; it just indicates that the value of deploying DNSSEC is often
+considered lower than the cost.
 
 
 # DNSSEC Core Documents
@@ -103,7 +122,7 @@ DSA was thinly implemented and can safely be ignored by DNSSEC implementations
 documents for the details).
 RSA is still the most popular signing algorithm for DNSSEC.
 
-## Addition to the DNSSEC core
+## Addition to the DNSSEC Core
 
 As with any major protocol, developers and operators discovered issues with the original
 core documents over the years.
@@ -117,8 +136,6 @@ It also lists some errors in the examples of the core specifications.
 {{RFC6840}} brings a few additions into the core of DNSSEC.
 It makes NSEC3 {{RFC5155}} as much a part of DNSSEC as NSEC is.
 It also makes the SHA-2 hash function defined in {{RFC4509}} and {{RFC5702}} part of the core as well.
-
-
 # Cryptographic Algorithms and DNSSEC
 
 Cryptography improves over time, and new algorithms get adopted by various Internet protocols.
@@ -134,35 +151,28 @@ in implementations: it is not advice for which algorithms that zone operators sh
 should not sign with, nor which algorithms recursive resolver operators should or should not
 validate.
 
-# Extensions to the DNSSEC core
+# Extensions to DNSSEC
 
-@@@@@ MORE GOES HERE @@@@@
+The DNSSEC community has extended the DNSSEC core and the cryptographic algorithms both
+in terms of describing good operational practices and in new protocols. Some of the
+RFCs that describe these extensions include:
 
-<!--
+- {{RFC5011}} explains how recursive resolvers and the DNS root can work together to automate 
+the rollover of the root's key signing key (KSK).
 
-4470: Minimally Covering NSEC Records and DNSSEC On-line Signing
-4986: Requirements Related to DNS Security (DNSSEC) Trust Anchor Rollover
-5011: Automated Updates of DNS Security (DNSSEC) Trust Anchors
-6781: DNSSEC Operational Practices, Version 2
-7344: Automating DNSSEC Delegation Trust Maintenance and 
-8078: Managing DS Records from the Parent via CDS/CDNSKEY
-8198: Aggressive Use of DNSSEC-Validated Cache
-9077: NSEC and NSEC3: TTLs and Aggressive Use
+- {{RFC6781}} is a compendium of operational practices that may not be obvious from reading
+just the core specifications.
 
--->
+- {{RFC7344}} describes using the CDS and CDNSKEY resource records to help automate the creation
+of DS records in the parents of signed zones.
 
-# DNSSEC as a Best Current Practice
+- {{RFC8078}} extends {{RFC7344}} by showing how to do initial setup of trusted relationships
+between signed parent and child zones.
 
-The DNSSEC set of protocols is widely considered the best current practice for adding
-origin authentication of data in the DNS. To date, no standards-track RFCs offer any other
-method for such origin authentication of data in the DNS.
+- {{RFC8198}} describes how a validating resolver can emit fewer queries in signed zones that
+use NSEC for negative caching.
 
-Some observers note that, more than 15 years after the DNSSEC specification was published,
-it is still not widely deployed. Recent estimates are that fewer than 10% of the domain names
-used for web sites are signed, and only around a third of queries to recursive resolvers
-are validated. However, this low level of implementation does not affect whether DNSSEC
-is a best current practice; it just indicates that the value of deploying DNSSEC is often
-considered lower than the cost.
+- {{RFC9077}} updates {{RFC8198}} with respect to the time-to-live (TTL) fields in signed records.
 
 
 # IANA Considerations
