@@ -103,6 +103,12 @@ security and interoperability issues that arose during the deployment of the ini
 specifications, particularly after the DNS root was signed in 2010.
 
 
+# Extensions to DNSSEC
+
+
+# Cryptographic Algorithms and DNSSEC
+
+
 # DNSSEC as a Best Current Practice
 
 The DNSSEC set of protocols is widely considered the best current practice for adding
@@ -120,6 +126,10 @@ considered lower than the cost.
 # IANA Considerations
 
 This document does not create any new IANA considerations.
+
+IANA already has many registries that relate to DNSSEC. These include:
+
+@@@@@ MORE GOES HERE @@@@@
 
 
 # Security Considerations
