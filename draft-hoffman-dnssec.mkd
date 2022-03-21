@@ -1,7 +1,7 @@
 ---
 title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
-docname: draft-hoffman-dnssec-00
+docname: draft-hoffman-dnssec-01
 
 stand_alone: true
 v: 3
