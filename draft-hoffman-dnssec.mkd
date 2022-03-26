@@ -136,7 +136,8 @@ It also lists some errors in the examples of the core specifications.
 {{RFC6840}} brings a few additions into the core of DNSSEC.
 It makes NSEC3 {{RFC5155}} as much a part of DNSSEC as NSEC is.
 It also makes the SHA-2 hash function defined in {{RFC4509}} and {{RFC5702}} part of the core as well.
-# Cryptographic Algorithms and DNSSEC
+
+# Additional Cryptographic Algorithms and DNSSEC
 
 Cryptography improves over time, and new algorithms get adopted by various Internet protocols.
 Two new  signing algorithms have been adopted by the DNSSEC community: ECDSA {{RFC6605}} and EdDSA {{RFC8080}}.
