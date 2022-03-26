@@ -67,7 +67,7 @@ be created.
 # Introduction
 
 The core specification for what we know as DNSSEC (the combination of {{RFC4033}},
-{{RFC4034}}, and {{RFC4035}}) describes a set of protocols that provides origin
+{{RFC4034}}, and {{RFC4035}}) describes a set of protocols that provide origin
 authentication to data in the DNS. {{RFC6840}} updates and extends those core RFCs,
 but does not fundamentally change the way that DNSSEC works.
 
