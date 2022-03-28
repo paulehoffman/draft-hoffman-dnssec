@@ -200,3 +200,11 @@ All of the security considerations from all of the RFCs referenced in this docum
 apply here.
 
 --- back
+
+# Acknowledgements
+
+The DNS world owes a depth of gratitude to the authors and other contributors
+to the core DNSSEC documents, and to the notable DNSSEC extensions.
+
+In addition, the following people made significant contributions to early versions
+of this document: Ben Schwartz and Duane Wessels.
