@@ -179,9 +179,12 @@ use NSEC for negative caching.
 
 # IANA Considerations
 
-IANA already has two registries that relate to DNSSEC:
-DNSSEC algorithm numbers (https://www.iana.org/assignments/dns-sec-alg-numbers) and
-DNSSEC NSEC3 parameters (https://www.iana.org/assignments/dnssec-nsec3-parameters).
+IANA already has three registries that relate to DNSSEC:
+
+- DNSSEC algorithm numbers (https://www.iana.org/assignments/dns-sec-alg-numbers)
+- DNSSEC NSEC3 parameters (https://www.iana.org/assignments/dnssec-nsec3-parameters)
+- DNSSEC DS RRtype digest algorithms (https://www.iana.org/assignments/ds-rr-types)
+
 The rules for the DNSSEC algorithm registry were set in the core RFCs and
 updated by {{RFC6014}} and {{RFC9157}}.
 
