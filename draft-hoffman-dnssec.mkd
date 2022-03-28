@@ -53,9 +53,10 @@ informative:
 --- abstract
 
 This document describes the DNS security extensions (commonly called "DNSSEC") that are
-specified RFCs 4033, 4034, 4035, and a handful of others. The purpose is to introduce
+specified RFCs 4033, 4034, 4035, and a handful of others. One purpose is to introduce
 all of the RFCs in one place so that the reader can understand the many aspects of DNSSEC.
 This document does not update any of those RFCs.
+Another purpose is to move DNSSEC to Best Current Practice status.
 
 This document is currently maintained at https://github.com/paulehoffman/draft-hoffman-dnssec.
 Issues and pull requests are welcomed.
