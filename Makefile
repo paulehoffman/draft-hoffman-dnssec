@@ -1,4 +1,4 @@
-all: draft-hoffman-dnssec.txt
+all: draft-ietf-dnsop-dnssec-bcp.txt
 
 .PRECIOUS: %.xml
 
