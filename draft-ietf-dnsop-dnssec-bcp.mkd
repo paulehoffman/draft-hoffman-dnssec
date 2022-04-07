@@ -60,8 +60,6 @@ Another purpose is to move DNSSEC to Best Current Practice status.
 
 This document is currently maintained at https://github.com/paulehoffman/draft-hoffman-dnssec.
 Issues and pull requests are welcomed.
-If the document is later adopted by a working group, a new repository will likely
-be created.
 
 --- middle
 
