@@ -92,6 +92,18 @@ Nonetheless, the significant deployment of DNSSEC within some top-level domains 
 and the near-universal deployment of DNSSEC in the TLDs,
 demonstrate that DNSSEC is suitable for implementation by both ordinary and highly sophisticated domain owners.
 
+## Implementing DNSSEC
+
+Developers of validating resolvers and authoritative servers,
+as well as operators of operators of validating resolvers and authoritative servers,
+need to know the parts of the DNSSEC protocol that would affect them.
+They should read the DNSSEC core documents, and probably at least be familiar
+with the extensions.
+Developers will probably need to be very familiar with the algorithm documents as well.
+
+As a side note, some of the DNSSEC-related RFCs have significant errata, so reading the
+RFCs should also include looking for the related errata.
+
 
 # DNSSEC Core Documents
 
