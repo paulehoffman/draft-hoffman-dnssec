@@ -37,16 +37,28 @@ normative:
 
 informative:
   RFC2536:
+  RFC4470:
   RFC5011:
   RFC5933:
   RFC6014:
   RFC6605:
+  RFC6725:
   RFC6781:
+  RFC6975:
+  RFC7129:
   RFC7344:
+  RFC7583:
+  RFC7646:
+  RFC7958:
+  RFC8027:
   RFC8078:
   RFC8080:
+  RFC8145:
   RFC8198:
+  RFC8499:
+  RFC8509:
   RFC8624:
+  RFC8901:
   RFC9077:
   RFC9157:
 
@@ -166,6 +178,7 @@ in implementations: it is not advice for which algorithms that zone operators sh
 should not sign with, nor which algorithms recursive resolver operators should or should not
 validate.
 
+
 # Extensions to DNSSEC
 
 The DNSSEC community has extended the DNSSEC core and the cryptographic algorithms both
@@ -190,6 +203,49 @@ use NSEC for negative caching.
 - {{RFC9077}} updates {{RFC8198}} with respect to the time-to-live (TTL) fields in signed records.
 
 
+# Additional Documents of Interest
+
+The documents listed above constitute the core of DNSSEC, the additional cryptographic algorithms,
+and the major extensions to DNSSEC.
+This section lists some additional documents that someone interested in implementing or operating
+DNSSEC might find of value.
+
+<!-- Adapted from https://gist.github.com/moonshiner/0746776f2351ae9c8e3edb3373ee39c6
+with other input from the WG mailing list -->
+
+- {{RFC4470}} "describes how to construct DNSSEC NSEC resource records that cover a smaller range of
+names than called for by {{RFC4034}}".
+
+- {{RFC6975}} "specifies a way for validating end-system resolvers to signal to a server which digital signature
+and hash algorithms they support".
+
+- {{RFC7129}} "provides additional background commentary and some context for the NSEC and NSEC3
+mechanisms used by DNSSEC to provide authenticated denial-of-existence responses".
+
+- {{RFC7583}} "describes the issues surrounding the timing of events in the rolling of a key in a DNSSEC-secured zone".
+
+- {{RFC7646}} "defines Negative Trust Anchors (NTAs), which can be used to mitigate DNSSEC validation failures by disabling
+DNSSEC validation at specified domains".
+
+- {{RFC7958}} "describes the format and publication mechanisms IANA has used to distribute the DNSSEC trust anchors".
+
+- {{RFC8027}} "describes problems that a Validating DNS resolver, stub-resolver, or application might run into within
+a non-compliant infrastructure".
+
+- {{RFC8145}} "specifies two different ways for validating resolvers to signal to a server which keys are
+referenced in their chain of trust".
+
+- {{RFC8499}} is a list of terminology used when talking about the DNS; sections 10 and 11 cover DNSSEC.
+
+- {{RFC8509}} "specifies a mechanism that will allow an end user and third parties to determine the trusted key
+state for the root key of the resolvers that handle that user's DNS queries".
+
+- {{RFC8901}} "presents deployment models that accommodate this scenario \[when each DNS
+provider independently signs zone data with their own keys\] and describes these key-management requirements".
+
+There will certainly be other RFCs related to DNSSEC that are published after this one.
+
+
 # IANA Considerations
 
 IANA already has three registries that relate to DNSSEC:
@@ -199,9 +255,9 @@ IANA already has three registries that relate to DNSSEC:
 - DNSSEC DS RRtype digest algorithms (https://www.iana.org/assignments/ds-rr-types)
 
 The rules for the DNSSEC algorithm registry were set in the core RFCs and
-updated by {{RFC6014}} and {{RFC9157}}.
+updated by {{RFC6014}}, {{RFC6725}}, and {{RFC9157}}.
 
-This document does not create any new IANA considerations.
+This document does not update or create any registries.
 
 
 # Security Considerations
