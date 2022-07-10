@@ -1,7 +1,7 @@
 ---
 title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
-docname: draft-ietf-dnsop-dnssec-bcp-01
+docname: draft-ietf-dnsop-dnssec-bcp-02
 
 stand_alone: true
 v: 3
@@ -137,7 +137,7 @@ DNSSEC, and authenticating DNSSEC-signed data.
 
 At the time this set of core documents was published, someone could create a DNSSEC
 implementation of signing software, of an DNSSEC-aware authoritative server, and/or
-a DNSSEC-aware recursive resolver from the three core documents plus a few older
+a DNSSEC-aware recursive resolver from the three core documents, the many documents that update them, plus a few older
 RFCs specifying the cryptography used. Those two older documents are:
 
 - {{RFC2536}} defines how to use the DSA signature algorithm (although refers to other
@@ -147,6 +147,9 @@ DSA was thinly implemented and can safely be ignored by DNSSEC implementations
 - {{RFC3110}} defines how to use the RSA signature algorithm (although refers to other
 documents for the details).
 RSA is still the most popular signing algorithm for DNSSEC.
+
+It is important to note that later RFCs update the core documents. As just one example,
+{{RFC9077}} changes how TTL values are calculated in DNSSEC processing.
 
 ## Addition to the DNSSEC Core
 
