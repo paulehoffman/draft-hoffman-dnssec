@@ -224,6 +224,7 @@ and hash algorithms they support".
 
 - {{RFC7129}} "provides additional background commentary and some context for the NSEC and NSEC3
 mechanisms used by DNSSEC to provide authenticated denial-of-existence responses".
+This background is particularly important for understanding NSEC and NSEC3 usage.
 
 - {{RFC7583}} "describes the issues surrounding the timing of events in the rolling of a key in a DNSSEC-secured zone".
 
