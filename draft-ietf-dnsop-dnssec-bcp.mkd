@@ -188,8 +188,8 @@ The DNSSEC community has extended the DNSSEC core and the cryptographic algorith
 in terms of describing good operational practices and in new protocols. Some of the
 RFCs that describe these extensions include:
 
-- {{RFC5011}} explains how recursive resolvers and the DNS root can work together to automate 
-the rollover of the root's key signing key (KSK).
+- {{RFC5011}} describes a method to help resolvers update their DNSSEC trust anchors in an
+automated fashion. This method was used in 2018 to update the DNS root trust anchor.
 
 - {{RFC6781}} is a compendium of operational practices that may not be obvious from reading
 just the core specifications.
