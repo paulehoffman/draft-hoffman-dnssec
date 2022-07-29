@@ -61,6 +61,7 @@ informative:
   RFC8901:
   RFC9077:
   RFC9157:
+  RFC9276:
 
 --- abstract
 
@@ -246,6 +247,9 @@ state for the root key of the resolvers that handle that user's DNS queries".
 
 - {{RFC8901}} "presents deployment models that accommodate this scenario \[when each DNS
 provider independently signs zone data with their own keys\] and describes these key-management requirements".
+
+- {{RFC9276}} "provides guidance on setting NSEC3 parameters based on recent operational
+deployment experience".
 
 There will certainly be other RFCs related to DNSSEC that are published after this one.
 
