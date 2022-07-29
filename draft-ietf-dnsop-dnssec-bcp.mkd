@@ -122,7 +122,7 @@ RFCs should also include looking for the related errata.
 What we today call "DNSSEC" is formally version 3 of the DNSSEC specification.
 However, earlier versions of DNSSEC were thinly deployed and significantly less
 visible than the current DNSSEC specification. Throughout this document, "DNSSEC"
-means the version of the protocol initially defined in {{RFC4033}}, {{RFC4034}}, and {{RFC4035}}.
+means version 3 of the protocol initially defined in {{RFC4033}}, {{RFC4034}}, and {{RFC4035}}.
 
 The three initial core documents generally cover different topics:
 
