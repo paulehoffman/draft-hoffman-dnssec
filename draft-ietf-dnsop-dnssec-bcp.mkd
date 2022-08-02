@@ -202,7 +202,7 @@ of DS records in the parents of signed zones.
 between signed parent and child zones.
 
 - {{RFC8198}} describes how a validating resolver can emit fewer queries in signed zones that
-use NSEC for negative caching.
+use NSEC and NSEC3 for negative caching.
 
 - {{RFC9077}} updates {{RFC8198}} with respect to the time-to-live (TTL) fields in signed records.
 
