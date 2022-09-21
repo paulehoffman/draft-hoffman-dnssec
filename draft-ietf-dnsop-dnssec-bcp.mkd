@@ -1,7 +1,7 @@
 ---
 title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
-docname: draft-ietf-dnsop-dnssec-bcp-03
+docname: draft-ietf-dnsop-dnssec-bcp-04
 
 stand_alone: true
 v: 3
@@ -108,7 +108,7 @@ demonstrate that DNSSEC is suitable for implementation by both ordinary and high
 ## Implementing DNSSEC
 
 Developers of validating resolvers and authoritative servers,
-as well as operators of operators of validating resolvers and authoritative servers,
+as well as operators of validating resolvers and authoritative servers,
 need to know the parts of the DNSSEC protocol that would affect them.
 They should read the DNSSEC core documents, and probably at least be familiar
 with the extensions.
