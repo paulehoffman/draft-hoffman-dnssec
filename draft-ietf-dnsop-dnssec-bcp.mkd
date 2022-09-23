@@ -258,9 +258,9 @@ There will certainly be other RFCs related to DNSSEC that are published after th
 
 IANA already has three registries that relate to DNSSEC:
 
-- DNSSEC algorithm numbers (https://www.iana.org/assignments/dns-sec-alg-numbers)
-- DNSSEC NSEC3 parameters (https://www.iana.org/assignments/dnssec-nsec3-parameters)
-- DNSSEC DS RRtype digest algorithms (https://www.iana.org/assignments/ds-rr-types)
+- [DNSSEC algorithm numbers](https://www.iana.org/assignments/dns-sec-alg-numbers)
+- [DNSSEC NSEC3 parameters](https://www.iana.org/assignments/dnssec-nsec3-parameters)
+- [DNSSEC DS RRtype digest algorithms](https://www.iana.org/assignments/ds-rr-types)
 
 The rules for the DNSSEC algorithm registry were set in the core RFCs and
 updated by {{RFC6014}}, {{RFC6725}}, and {{RFC9157}}.
