@@ -42,6 +42,7 @@ informative:
   RFC5933:
   RFC6014:
   RFC6605:
+  RFC6698:
   RFC6725:
   RFC6781:
   RFC6975:
@@ -86,16 +87,17 @@ but does not fundamentally change the way that DNSSEC works.
 This document lists many (but not all) of the RFCs that should be considered by someone
 creating an implementation of, or someone deploying, modern DNSSEC.
 It uses terminology from those documents without defining that terminology.
-It also points to the relevant IANA registries that relate to DNSSEC.
-It does not, however, point to standards that rely on zones needing to be signed by DNSSEC.
+It also points to the relevant IANA registry groups that relate to DNSSEC.
+It does not, however, point to standards that rely on zones needing to be signed by DNSSEC
+such as DANE {{RFC6698}}.
 
 ## DNSSEC as a Best Current Practice
 
-The DNSSEC set of protocols is widely considered the best current practice for adding
+The DNSSEC set of protocols is the best current practice for adding
 origin authentication of data in the DNS. To date, no standards-track RFCs offer any other
 method for such origin authentication of data in the DNS.
 
-Some observers note that, more than 15 years after the DNSSEC specification was published,
+More than 15 years after the DNSSEC specification was published,
 it is still not widely deployed. Recent estimates are that fewer than 10% of the domain names
 used for web sites are signed, and only around a third of queries to recursive resolvers
 are validated. However, this low level of implementation does not affect whether DNSSEC
@@ -147,7 +149,7 @@ DSA was thinly implemented and can safely be ignored by DNSSEC implementations.
 
 - {{RFC3110}} defines how to use the RSA signature algorithm (although refers to other
 documents for the details).
-RSA is still the most popular signing algorithm for DNSSEC.
+RSA is still among the most popular signing algorithm for DNSSEC.
 
 It is important to note that later RFCs update the core documents. As just one example,
 {{RFC9077}} changes how TTL values are calculated in DNSSEC processing.
@@ -171,6 +173,7 @@ It also makes the SHA-2 hash function defined in {{RFC4509}} and {{RFC5702}} par
 
 Cryptography improves over time, and new algorithms get adopted by various Internet protocols.
 Two new  signing algorithms have been adopted by the DNSSEC community: ECDSA {{RFC6605}} and EdDSA {{RFC8080}}.
+ECDSA and EdDSA have become very popular signing algorithms in recent years.
 The GOST signing algorithm {{RFC5933}} was also adopted, but has seen very limited use, likely
 because it is a national algorithm specific to a very small number of countries.
 <!-- RFC 5933 is being updated (soon?) by draft-ietf-dnsop-rfc5933-bis -->
