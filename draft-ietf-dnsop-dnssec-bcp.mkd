@@ -221,7 +221,9 @@ DNSSEC might find of value.
 with other input from the WG mailing list -->
 
 - {{RFC4470}} "describes how to construct DNSSEC NSEC resource records that cover a smaller range of
-names than called for by {{RFC4034}}".
+names than called for by {{RFC4034}}. By generating and signing these records on demand, authoritative name
+servers can effectively stop the disclosure of zone contents otherwise made possible by walking the chain of NSEC records in a
+signed zone.".
 
 - {{RFC6975}} "specifies a way for validating end-system resolvers to signal to a server which digital signature
 and hash algorithms they support".
