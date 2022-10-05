@@ -1,7 +1,7 @@
 ---
 title: DNS Security Extensions (DNSSEC)
 abbrev: DNSSEC
-docname: draft-ietf-dnsop-dnssec-bcp-04
+docname: draft-ietf-dnsop-dnssec-bcp-05
 
 stand_alone: true
 v: 3
