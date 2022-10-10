@@ -36,6 +36,8 @@ normative:
   RFC6840:
 
 informative:
+  RFC2065:
+  RFC2535:
   RFC2536:
   RFC4470:
   RFC5011:
@@ -122,10 +124,10 @@ RFCs should also include looking for the related errata.
 
 # DNSSEC Core Documents
 
-What we today call "DNSSEC" is formally version 3 of the DNSSEC specification.
-However, earlier versions of DNSSEC were thinly deployed and significantly less
-visible than the current DNSSEC specification. Throughout this document, "DNSSEC"
-means version 3 of the protocol initially defined in {{RFC4033}}, {{RFC4034}}, and {{RFC4035}}.
+What we refer to as "DNSSEC" is the third iteration of the DNSSEC specification;
+{{RFC2065}} was the first, and {{RFC2535}} was the second.
+Earlier iterations have not been deployed on a significant scale.
+Throughout this document, "DNSSEC" means the protocol initially defined in {{RFC4033}}, {{RFC4034}}, and  {{RFC4035}}.
 
 The three initial core documents generally cover different topics:
 
@@ -176,7 +178,6 @@ Two new  signing algorithms have been adopted by the DNSSEC community: ECDSA {{R
 ECDSA and EdDSA have become very popular signing algorithms in recent years.
 The GOST signing algorithm {{RFC5933}} was also adopted, but has seen very limited use, likely
 because it is a national algorithm specific to a very small number of countries.
-<!-- RFC 5933 is being updated (soon?) by draft-ietf-dnsop-rfc5933-bis -->
 
 Implementation developers who want to know which algorithms to implement in DNSSEC software
 should refer to {{RFC8624}}.
@@ -216,9 +217,6 @@ The documents listed above constitute the core of DNSSEC, the additional cryptog
 and the major extensions to DNSSEC.
 This section lists some additional documents that someone interested in implementing or operating
 DNSSEC might find of value.
-
-<!-- Adapted from https://gist.github.com/moonshiner/0746776f2351ae9c8e3edb3373ee39c6
-with other input from the WG mailing list -->
 
 - {{RFC4470}} "describes how to construct DNSSEC NSEC resource records that cover a smaller range of
 names than called for by {{RFC4034}}. By generating and signing these records on demand, authoritative name
