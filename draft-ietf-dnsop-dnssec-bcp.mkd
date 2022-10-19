@@ -86,8 +86,9 @@ The core specification for what we know as DNSSEC (the combination of {{RFC4033}
 authentication to data in the DNS. {{RFC6840}} updates and extends those core RFCs,
 but does not fundamentally change the way that DNSSEC works.
 
-This document lists many (but not all) of the RFCs that should be considered by someone
+This document lists RFCs that should be considered by someone
 creating an implementation of, or someone deploying, modern DNSSEC.
+Although an effort was made to be thorough, the reader should not assume this list is comprehensive.
 It uses terminology from those documents without defining that terminology.
 It also points to the relevant IANA registry groups that relate to DNSSEC.
 It does not, however, point to standards that rely on zones needing to be signed by DNSSEC
