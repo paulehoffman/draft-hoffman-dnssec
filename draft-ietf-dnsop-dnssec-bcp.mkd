@@ -108,7 +108,7 @@ is a best current practice; it just indicates that the value of deploying DNSSEC
 considered lower than the cost.
 Nonetheless, the significant deployment of DNSSEC beneath some top-level domains (TLDs),
 and the near-universal deployment of DNSSEC for the TLDs in the DNS root zone,
-demonstrate that DNSSEC is suitable for implementation by both ordinary and highly sophisticated domain owners.
+demonstrate that DNSSEC is applicable for implementation by both ordinary and highly sophisticated domain owners.
 
 ## Implementing DNSSEC
 
@@ -174,7 +174,7 @@ It also makes the SHA-2 hash function defined in {{RFC4509}} and {{RFC5702}} par
 
 # Additional Cryptographic Algorithms and DNSSEC
 
-Cryptography improves over time, and new algorithms get adopted by various Internet protocols.
+Current cryptographic algorithms typically weaken over time as computing power improves and new cryptoanalysis emerges.
 Two new  signing algorithms have been adopted by the DNSSEC community: ECDSA {{RFC6605}} and EdDSA {{RFC8080}}.
 ECDSA and EdDSA have become very popular signing algorithms in recent years.
 The GOST signing algorithm {{RFC5933}} was also adopted, but has seen very limited use, likely
