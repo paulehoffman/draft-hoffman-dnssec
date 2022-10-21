@@ -72,7 +72,7 @@ This document describes the DNS security extensions (commonly called "DNSSEC") t
 specified RFCs 4033, 4034, 4035, and a handful of others. One purpose is to introduce
 all of the RFCs in one place so that the reader can understand the many aspects of DNSSEC.
 This document does not update any of those RFCs.
-A second purpose is to move DNSSEC to Best Current Practice status.
+A second purpose is to state that using DNSSEC for origin authentication of DNS data is the best current practice.
 A third purpose is to provide a single reference for other documents that want to refer to DNSSEC.
 
 This document is currently maintained at https://github.com/paulehoffman/draft-hoffman-dnssec.
@@ -84,7 +84,7 @@ Issues and pull requests are welcomed.
 
 The core specification for what we know as DNSSEC (the combination of {{RFC4033}},
 {{RFC4034}}, and {{RFC4035}}) describes a set of protocols that provide origin
-authentication to data in the DNS. {{RFC6840}} updates and extends those core RFCs,
+authentication of DNS data. {{RFC6840}} updates and extends those core RFCs,
 but does not fundamentally change the way that DNSSEC works.
 
 This document lists RFCs that should be considered by someone
@@ -97,14 +97,14 @@ such as DANE {{RFC6698}}.
 
 ## DNSSEC as a Best Current Practice
 
-The DNSSEC set of protocols is the best current practice for adding
-origin authentication of data in the DNS. To date, no standards-track RFCs offer any other
+Using the DNSSEC set of protocols is the best current practice for adding
+origin authentication of DNS data. To date, no standards-track RFCs offer any other
 method for such origin authentication of data in the DNS.
 
 More than 15 years after the DNSSEC specification was published,
 it is still not widely deployed. Recent estimates are that fewer than 10% of the domain names
 used for web sites are signed, and only around a third of queries to recursive resolvers
-are validated. However, this low level of deployment does not affect whether DNSSEC
+are validated. However, this low level of deployment does not affect whether using DNSSEC
 is a best current practice; it just indicates that the value of deploying DNSSEC is often
 considered lower than the cost.
 Nonetheless, the significant deployment of DNSSEC beneath some top-level domains (TLDs),
