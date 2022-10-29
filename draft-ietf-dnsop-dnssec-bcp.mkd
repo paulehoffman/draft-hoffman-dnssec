@@ -129,7 +129,7 @@ RFCs should also include looking for the related errata.
 What we refer to as "DNSSEC" is the third iteration of the DNSSEC specification;
 {{RFC2065}} was the first, and {{RFC2535}} was the second.
 Earlier iterations have not been deployed on a significant scale.
-Throughout this document, "DNSSEC" means the protocol initially defined in {{RFC4033}}, {{RFC4034}}, and  {{RFC4035}}.
+Throughout this document, "DNSSEC" means the protocol initially defined in {{RFC4033}}, {{RFC4034}}, and {{RFC4035}}.
 
 The three initial core documents generally cover different topics:
 
@@ -153,7 +153,7 @@ DSA was thinly implemented and can safely be ignored by DNSSEC implementations.
 
 - {{RFC3110}} defines how to use the RSA signature algorithm (although refers to other
 documents for the details).
-RSA is still among the most popular signing algorithm for DNSSEC.
+RSA is still among the most popular signing algorithms for DNSSEC.
 
 It is important to note that later RFCs update the core documents. As just one example,
 {{RFC9077}} changes how TTL values are calculated in DNSSEC processing.
@@ -176,7 +176,7 @@ It also makes the SHA-2 hash function defined in {{RFC4509}} and {{RFC5702}} par
 # Additional Cryptographic Algorithms and DNSSEC
 
 Current cryptographic algorithms typically weaken over time as computing power improves and new cryptoanalysis emerges.
-Two new  signing algorithms have been adopted by the DNSSEC community: ECDSA {{RFC6605}} and EdDSA {{RFC8080}}.
+Two new signing algorithms have been adopted by the DNSSEC community: ECDSA {{RFC6605}} and EdDSA {{RFC8080}}.
 ECDSA and EdDSA have become very popular signing algorithms in recent years.
 The GOST signing algorithm {{I-D.ietf-dnsop-rfc5933-bis}} was also adopted, but has seen very limited use, likely
 because it is a national algorithm specific to a very small number of countries.
@@ -186,7 +186,7 @@ should refer to {{RFC8624}}.
 Note that this specification is only about what algorithms should and should not be included
 in implementations: it is not advice for which algorithms that zone operators should and
 should not sign with, nor which algorithms recursive resolver operators should or should not
-be used for validation.
+use for validation.
 
 
 # Extensions to DNSSEC
@@ -282,7 +282,7 @@ apply here.
 
 # Acknowledgements
 
-The DNS world owes a depth of gratitude to the authors and other contributors
+The DNS world owes a debt of gratitude to the authors and other contributors
 to the core DNSSEC documents, and to the notable DNSSEC extensions.
 
 In addition, the following people made significant contributions to early versions
